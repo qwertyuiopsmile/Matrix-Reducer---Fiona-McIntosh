@@ -68,7 +68,7 @@ public class MatrixReducerNew {
 
 
         //issue here - negative numbers thrwo it off a lot
-        while (tabs > matrix[0].length && tabs>0) {
+        while (tabs > matrix[0].length || tabs<=0) {
 
             finishIt(matrix, roundNumber);
             roundNumber++;
