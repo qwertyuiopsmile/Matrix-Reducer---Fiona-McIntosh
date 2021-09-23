@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MatrixReducer {
+public class MatrixReducerNew {
     public static void main(String args[]) {
 
         // take input to see dimsensions of the AUGMENTED array
@@ -66,7 +66,8 @@ public class MatrixReducer {
         //takes it from eschelon form to RREF!
         int roundNumber = 2;
 
-        //issue here with the negative numbers messing it up
+
+        //issue here - negative numbers thrwo it off a lot
         while (tabs > matrix[0].length && tabs>0) {
 
             finishIt(matrix, roundNumber);
