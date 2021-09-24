@@ -66,8 +66,6 @@ public class MatrixReducer {
         //takes it from eschelon form to RREF!
         int roundNumber = 2;
 
-        //issue here with the negative numbers messing it up
-        //while (tabs > matrix[0].length || tabs<0) 
         while (tabs!=0)
         {
 
@@ -148,7 +146,8 @@ public class MatrixReducer {
     public static double[][] subtractForDiagnols(double[][] matrix, int counter) {
         if (matrix[counter - 1][counter - 1] == 0)
         {    
-        //attempting to deal with the zero problem ehre, not working though
+        //this deals with leading zeros by just adding rows together so they are no longer zeros
+        //clever, huh? :P
             matrix = addRowBValuestoRowA(matrix, counter, counter - 1, 2);
         }
         for (int x = counter; x < matrix.length; x++) {
