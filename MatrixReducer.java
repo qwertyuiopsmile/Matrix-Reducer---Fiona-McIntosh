@@ -147,7 +147,8 @@ public class MatrixReducer {
         if (matrix[counter - 1][counter - 1] == 0)
         {    
         //this deals with leading zeros by just adding rows together so they are no longer zeros
-        //clever, huh? :P
+        //not working correclty now with a lot of zero cases though
+        //need to FIX
             matrix = addRowBValuestoRowA(matrix, counter, counter - 1, 2);
         }
         for (int x = counter; x < matrix.length; x++) {
