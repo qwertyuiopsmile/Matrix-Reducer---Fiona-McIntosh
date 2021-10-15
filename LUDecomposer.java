@@ -56,6 +56,12 @@ public class LUDecomposer {
             }
         }
 
+        if (matrix[dimension-1][dimension-1] == 0)
+        {
+            System.out.println("This matrix cannot undergo LU Decomposition. Sorry!");
+            System.exit(0);
+        }
+
         shadowMatrix = makeOnes(shadowMatrix, dimension);
         System.out.println("Lastly, we divide the columns such that the leading number is one for the L matrix. We get the following:");
         printMatrix(shadowMatrix);
